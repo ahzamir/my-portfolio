@@ -15,7 +15,6 @@
   --secondary-color: #85e4a9;
   --tertiary-color: #badefe;
   --quaternary-color: hsl(208, 97%, 95%);
-  --main-color-light: hsl(216, 66%, 18%);
   --calibre: 'Calibre', sans-serif;
   --sf-mono: 'SF Mono', monospace;
 }
@@ -23,32 +22,18 @@
 body {
   font-family: var(--calibre);
   background-color: var(--main-color);
-  color: var(--secondary-color);
-  line-height: 1.5;
-  font-size: 1.125rem;
+  color: var(--quaternary-color);
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 
 h1 {
   font-family: var(--sf-mono);
   font-weight: bold;
   color: var(--secondary-color);
-  text-align: center;
-  font-size: 4rem;
 }
 
 p {
   color: var(--tertiary-color);
-  text-align: center;
-  font-size: 3rem;
-}
-
-span {
-  color: var(--quaternary-color);
-  text-align: center;
-  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
 }
