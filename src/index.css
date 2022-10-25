@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('http://fonts.cdnfonts.com/css/sf-mono');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0a1930;
+  --secondary-color: #85e4a9;
+  --tertiary-color: #badefe;
+  --quaternary-color: hsl(208, 97%, 95%);
+  --calibre: 'Calibre', sans-serif;
+  --sf-mono: 'SF Mono', monospace;
+}
+
+body {
+  font-family: var(--calibre);
+  background-color: var(--main-color);
+  color: var(--quaternary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: var(--sf-mono);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+p {
+  color: var(--tertiary-color);
+  font-family: 'Courier New', Courier, monospace;
+}
