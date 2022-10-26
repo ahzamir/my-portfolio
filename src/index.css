@@ -194,6 +194,10 @@ ul {
   margin: 0 10px;
 }
 
+.contents{
+  padding-right: 140px;
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 0 12px;
@@ -201,5 +205,9 @@ ul {
 
   .logo {
     width: 50px;
+  }
+
+  .contents{
+    padding: 12px;
   }
 }
