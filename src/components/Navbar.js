@@ -46,7 +46,7 @@ const Navbar = () => {
           </ul>
         </div>
         <img src={logoImg} alt="Zamir's logo" className="logo" />
-        <ul className="d-none d-md-flex justify-content-between align-items-center list-style-none w-25 mb-0">
+        <ul className="d-none d-md-flex justify-content-between align-items-center list-style-none mb-0 w-50 ps-5">
           {links.map((link) => (
             <li key={link.id}>
               <a href={link.path} className="text-decoration-none p-2 quaternary-color">{link.text}</a>
