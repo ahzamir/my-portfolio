@@ -1,7 +1,5 @@
 import React from 'react';
 import projectsSvg from '../../assets/svgs/projects-page.svg';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 
 const Projects = () => (
     <section id="home" className="row m-0 pt-5 pb-5 mt-md-5 mb-md-5">

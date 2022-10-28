@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import SidePanels from './components/SidePanels';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Projects from './components/pages/Projects';
 
 const App = () => (
   <div className="App h-100">
@@ -15,7 +14,6 @@ const App = () => (
       <div className="col-md-11 offset-md-1 h-100 contents pt-5">
         <Home />
         <About />
-        <Projects />
       </div>
     </main>
   </div>
