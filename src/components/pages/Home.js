@@ -10,7 +10,7 @@ const Home = () => (
         <br />
         Full Stack Web Developer.
       </h1>
-      <p className="tertiary-color fs-5">
+      <p className="tertiary-color fs-7 fs-md-6">
         Full-stack software engineer with a love for
         {' '}
         <span className="secondary-color">clean code</span>

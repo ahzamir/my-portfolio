@@ -198,6 +198,10 @@ ul {
   padding-right: 140px;
 }
 
+i {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 0 12px;
@@ -209,5 +213,13 @@ ul {
 
   .contents{
     padding: 12px;
+  }
+
+  #home {
+    height: fit-content !important;
+  }
+
+  i {
+    font-size: 1.5rem;
   }
 }
