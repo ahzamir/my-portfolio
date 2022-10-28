@@ -27,7 +27,7 @@ const About = () => (
         <p>
           &gt; Zamir.location =
           {' '}
-          <span className="quaternary-color">['Kabul, Afghanistan']</span>
+          <span className="quaternary-color">[&apos;Kabul, Afghanistan&apos;]</span>
           ;
         </p>
       </div>
@@ -36,9 +36,9 @@ const About = () => (
           &gt; Zamir.email =
           {' '}
           <span className="quaternary-color">
-            ['
-<a href="mailto:ahmadzamiryousofi1397@gmail.com" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">ahmadzamiryousofi1397@gmail</a>
-            ']
+            [&apos;
+            <a href="mailto:ahmadzamiryousofi1397@gmail.com" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">ahmadzamiryousofi1397@gmail</a>
+            &apos;]
           </span>
           ;
         </p>
@@ -48,9 +48,9 @@ const About = () => (
           &gt; Zamir.resume =
           {' '}
           <span>
-            ['
-<a href="https://drive.google.com/file/d/15K-DfNZOZJAPTowgqT5ptugnX96kt7yT/view?usp=sharing" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">Resume</a>
-            ']
+            [&apos;
+            <a href="https://drive.google.com/file/d/15K-DfNZOZJAPTowgqT5ptugnX96kt7yT/view?usp=sharing" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">Resume</a>
+            &apos;]
           </span>
           ;
         </p>
@@ -59,7 +59,7 @@ const About = () => (
         <p>
           &gt; Zamir.profeesional_skills =
           {' '}
-          <span className="quaternary-color">['Pair Programming', 'Code Review', 'Test-Driven Development', 'Responsive Web Design', 'Clean Code', 'Version Control', 'Object-Oriented Programming', 'Problem Solving', 'Teamwork', 'Communication', 'Time Management']</span>
+          <span className="quaternary-color">[&apos;Pair Programming&apos;, &apos;Code Review&apos;, &apos;Test-Driven Development&apos;, &apos;Responsive Web Design&apos;, &apos;Clean Code&apos;, &apos;Version Control&apos;, &apos;Object-Oriented Programming&apos;, &apos;Problem Solving&apos;, &apos;Teamwork&apos;, &apos;Communication&apos;, &apos;Time Management&apos;]</span>
           ;
         </p>
       </div>
@@ -67,7 +67,7 @@ const About = () => (
         <p>
           &gt; Zamir.interests =
           {' '}
-          <span className="quaternary-color">['Design', 'Reading Books', 'Movies', 'Travel', 'Workout']</span>
+          <span className="quaternary-color">[&apos;Design&apos;, &apos;Reading Books&apos;, &apos;Movies&apos;, &apos;Travel&apos;, &apos;Workout&apos;]</span>
           ;
         </p>
       </div>
