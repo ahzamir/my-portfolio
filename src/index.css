@@ -1,4 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/sf-mono');
+/* import oxygen mono font */
+@import url('http://fonts.cdnfonts.com/css/oxygen');
 
 * {
   margin: 0;
@@ -34,6 +36,14 @@
   color: var(--quaternary-color);
 }
 
+.font-courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.font-sfmono {
+  font-family: var(--sf-mono);
+}
+
 body {
   font-family: var(--calibre);
   background-color: var(--main-color);
@@ -54,6 +64,10 @@ header {
 
 .logo {
   width: 70px;
+}
+
+a {
+  font-family: var(--sf-mono);
 }
 
 a:hover {
@@ -182,7 +196,7 @@ ul {
   width: 2px;
   height: 100%;
   background-color: var(--tertiary-color);
-  margin: 20px 50% 0 50%; 
+  margin: 20px 50% 0 50%;
   transform: rotate(180deg);
 }
 
@@ -194,12 +208,18 @@ ul {
   margin: 0 10px;
 }
 
-.contents{
+.contents {
   padding-right: 140px;
 }
 
 i {
-  font-size: 2rem;
+  font-size: 1.9rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,7 +231,7 @@ i {
     width: 50px;
   }
 
-  .contents{
+  .contents {
     padding: 12px;
   }
 
@@ -221,5 +241,10 @@ i {
 
   i {
     font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

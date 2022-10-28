@@ -26,16 +26,18 @@ const About = () => (
       <div>
         <p>
           &gt; Zamir.location =
-          <span className="quaternary-color">['Kabul, Afghanistan]</span>
+          {' '}
+          <span className="quaternary-color">['Kabul, Afghanistan']</span>
           ;
         </p>
       </div>
       <div>
         <p>
           &gt; Zamir.email =
+          {' '}
           <span className="quaternary-color">
             ['
-<a href="mailto:ahmadzamiryousofi1397@gmail.com" target="_blank" rel="noreferrer">ahmadzamiryousofi1397@gmail</a>
+<a href="mailto:ahmadzamiryousofi1397@gmail.com" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">ahmadzamiryousofi1397@gmail</a>
             ']
           </span>
           ;
@@ -44,9 +46,10 @@ const About = () => (
       <div>
         <p>
           &gt; Zamir.resume =
+          {' '}
           <span>
             ['
-<a href="https://drive.google.com/file/d/15K-DfNZOZJAPTowgqT5ptugnX96kt7yT/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+<a href="https://drive.google.com/file/d/15K-DfNZOZJAPTowgqT5ptugnX96kt7yT/view?usp=sharing" target="_blank" rel="noreferrer" className="text-decoration-none p-2 quaternary-color">Resume</a>
             ']
           </span>
           ;
@@ -55,13 +58,15 @@ const About = () => (
       <div>
         <p>
           &gt; Zamir.profeesional_skills =
+          {' '}
           <span className="quaternary-color">['Pair Programming', 'Code Review', 'Test-Driven Development', 'Responsive Web Design', 'Clean Code', 'Version Control', 'Object-Oriented Programming', 'Problem Solving', 'Teamwork', 'Communication', 'Time Management']</span>
           ;
         </p>
       </div>
       <div>
         <p>
-          &gt; Zamir.intereests =
+          &gt; Zamir.interests =
+          {' '}
           <span className="quaternary-color">['Design', 'Reading Books', 'Movies', 'Travel', 'Workout']</span>
           ;
         </p>
@@ -69,6 +74,7 @@ const About = () => (
       <div>
         <p>
           &gt; Zamir.skills =
+          {' '}
           <span className="quaternary-color">[</span>
           <span className="quaternary-color">
             <i style={{ color: '#f35321' }}><AiOutlineHtml5 /></i>

@@ -4,13 +4,13 @@ import homeSvg from '../../assets/svgs/home-page.svg';
 const Home = () => (
   <section id="home" className="row m-0 pt-5 pb-5 h-100">
     <div className="col-md-8">
-      <h2 className="secondary-color mb-4 fw-bold fs-5">Hi there!</h2>
+      <h2 className="secondary-color mb-4 fw-bold fs-5 font-courier">Hi there!</h2>
       <h1 className="quaternary-color fs-1 fw-bold mb-5">
         I&apos;m Ahmad Zamir Yousufi
         <br />
         Full Stack Web Developer.
       </h1>
-      <p className="tertiary-color fs-7 fs-md-6">
+      <p className="tertiary-color fs-7 fs-md-6 font-sfmono">
         Full-stack software engineer with a love for
         {' '}
         <span className="secondary-color">clean code</span>
