@@ -231,16 +231,16 @@ i {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
-  border: 1px solid var(--secondary-color);
+  border: 2px solid #ffbf0069;
+  border-radius: 5px;
   bottom: 0;
   left: 0;
   right: 0;
   color: white;
   padding: 1rem;
   cursor: pointer;
-  /* rounded corners only for top right */
   -webkit-box-shadow: 30px 30px 80px #d9a300, -30px -30px 80px #ffdd00;
-  box-shadow: 30px 30px 80px
+  box-shadow: 30px 30px 80px;
 }
 
 @media screen and (max-width: 768px) {
