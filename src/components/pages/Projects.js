@@ -110,7 +110,7 @@ const Projects = () => {
   };
   return (
     <section id="projects" className="row m-0 pt-5 pb-5 mt-md-5 mb-md-5">
-      <div className="col-md-8">
+      <div className="col-md-9">
         <div className="d-flex mb-4">
           <h2 className="secondary-color mb-3 fw-bold fs-4">Projects</h2>
           <hr className="ms-3 w-25" />
@@ -126,23 +126,20 @@ const Projects = () => {
               <img
                 className="d-block w-100 rounded shadow"
                 style={{
-                  height: '400px', objectFit: 'cover', objectPosition: 'center', cursor: 'pointer',
+                    height: 'auto', objectFit: 'cover', objectPosition: 'center', cursor: 'pointer',
                 }}
                 src={project.image}
                 alt={project.title}
               />
               <Carousel.Caption
-                className="d-flex flex-column justify-content-end"
-                style={{
-                  bottom: '0', left: '0', right: '0', backgroundColor: 'rgba(0, 0, 0, 0.3)', color: 'white', padding: '1rem', cursor: 'pointer', borderRadius: '0 0 0.25rem 0.25rem',
-                }}
+                className="d-flex flex-column justify-content-end carousel-info"
               >
                 <h3
                   className="text-white fw-bold fs-5"
                 >
                   {project.title}
                 </h3>
-                <button id={project.id} onClick={handleClick} className="btn btn-outline-light mt-3 mb-3">See Project</button>
+                <button id={project.id} onClick={handleClick} className="btn btn-outline-light mt-3 mb-3 fs-6 fw-bold rounded-pill">See Project</button>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -167,7 +164,7 @@ const Projects = () => {
           </Modal.Body>
         </Modal>
       </div>
-      <div className="col-md-4 d-none d-md-flex justify-content-center align-items-center">
+      <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center">
         <img src={projectsSvg} alt="Home" className="img-fluid" />
       </div>
     </section>
