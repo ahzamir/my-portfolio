@@ -297,7 +297,9 @@ i {
     padding: 12px;
   }
 
-  #home {
+  #home,
+  #about,
+  #projects {
     height: fit-content !important;
   }
 
@@ -308,5 +310,9 @@ i {
   #about p {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .carousel-div {
+    height: 30vh;
   }
 }
