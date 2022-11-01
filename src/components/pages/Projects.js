@@ -4,9 +4,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import projectsSvg from '../../assets/svgs/projects-page.svg';
 
 const suiteUpImage = require('../../assets/project-screenshots/suite-up.png');
-// const suiteUpImage2 = require('../../assets/project-screenshots/suite-up-2.png');
-// const suiteUpImage3 = require('../../assets/project-screenshots/suite-up-3.png');
-// const suiteUpImage4 = require('../../assets/project-screenshots/suite-up-mobile.svg');
+const suiteUpImage2 = require('../../assets/project-screenshots/suite-up-2.png');
+const suiteUpImage3 = require('../../assets/project-screenshots/suite-up-3.png');
+const suiteUpImage4 = require('../../assets/project-screenshots/suite-up-4.png');
+// const suiteUpImage5 = require('../../assets/project-screenshots/suite-up-mobile.svg');
 const budgetAppImage = require('../../assets/project-screenshots/budget-app.png');
 // const budgetAppImage2 = require('../../assets/project-screenshots/budget-app-mobile.svg');
 const weatherAppImage = require('../../assets/project-screenshots/weather-app.png');
@@ -31,6 +32,8 @@ const Projects = () => {
         title: '',
         description: '',
         image: '',
+        more_images: [],
+        languages_and_tools: [],
     });
 
     const projects = [
@@ -40,6 +43,15 @@ const Projects = () => {
             description: 'SuiteUp is a Rails React app which simulates a hotel booking system. It allows users to book a room, view their bookings, and cancel bookings. It also allows users to create a new room and view all rooms. It uses a PostgreSQL database to store the data, and RESTful API to communicate with the database.',
             image: suiteUpImage,
             languages_and_tools: ['Ruby on Rails', 'React', 'PostgreSQL', 'Bootstrap', 'Heroku', 'Vercel'],
+            more_images: [
+                suiteUpImage,
+                suiteUpImage2,
+                suiteUpImage3,
+                suiteUpImage4,
+                // suiteUpImage5,
+            ],
+            live_link: 'https://hotel-room-frontend.vercel.app/',
+            source_link: 'https://github.com/felixodette/hotel-room-frontend'
         },
         {
             id: '2',
@@ -105,6 +117,8 @@ const Projects = () => {
             title: project.title,
             description: project.description,
             image: project.image,
+            more_images: project.more_images,
+            languages_and_tools: project.languages_and_tools,
         });
         setShow(true);
     };
@@ -158,7 +172,7 @@ const Projects = () => {
                     dialogClassName="modal-90w"
                     aria-labelledby="example-custom-modal-styling-title"
                     animation
-                    size="lg"
+                    size="xl"
                     fullscreen="md-down"
                 >
                     <Modal.Header closeButton>
@@ -167,8 +181,44 @@ const Projects = () => {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <img src={projectData.image} alt={projectData.title} className="img-fluid" />
-                        <p>{projectData.description}</p>
+                        <Carousel
+                            nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
+                            prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle-y" />}
+                            className="carousel-div"
+                        >
+                            {projectData.more_images.map((image) => (
+                                <Carousel.Item>
+                                    <img
+                                        className="img-fluid"
+                                        src={image}
+                                        alt={projectData.title}
+                                    />
+                                </Carousel.Item>
+                            ))}
+                        </Carousel>
+                        <div className="row m-0 mt-3">
+                            <p
+                                className="col-md-8 fs-6 fw-bold"
+                            >{projectData.description}</p>
+                            <div
+                                className="col-md-4 d-flex flex-column justify-content-center"
+                            >
+                                <ul className="list-unstyled d-flex flex-wrap">
+                                    {projectData.languages_and_tools.map((language) => (
+                                        <li
+                                            key={language}
+                                            className="badge bg-secondary text-wrap m-1 p-2"
+                                        >
+                                            {language}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div className="d-flex justify-content-between links">
+                                    <a href={projectData.live_link} target="_blank" rel="noreferrer">Live Link</a>
+                                    <a href={projectData.source_link} target="_blank" rel="noreferrer">Source Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </Modal.Body>
                 </Modal>
             </div>
