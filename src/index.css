@@ -263,8 +263,12 @@ i {
 }
 
 .project-link {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border: #d9a300 2px solid;
+}
+
+.project-link i {
+  font-size: 1rem;
 }
 
 .project-link:hover {
