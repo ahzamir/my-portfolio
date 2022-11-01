@@ -4,6 +4,7 @@ import SidePanels from './components/SidePanels';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/pages/Projects';
+import Recomendations from './components/pages/Recomendations';
 
 const App = () => (
   <div className="App h-100">
@@ -16,6 +17,7 @@ const App = () => (
         <Home />
         <About />
         <Projects />
+        <Recomendations />
       </div>
     </main>
   </div>

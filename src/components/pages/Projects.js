@@ -49,7 +49,7 @@ const Projects = () => {
               onClick={handleClick}
             >
               <img
-                className="d-block w-100 rounded shadow border border-2 border-dark"
+                className="d-block w-100 rounded shadow border border-2 border-white"
                 style={{
                   height: 'auto', objectFit: 'cover', objectPosition: 'center', cursor: 'pointer',
                 }}

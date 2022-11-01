@@ -1,4 +1,3 @@
-
 const suiteUpImage = require('../../assets/project-screenshots/suite-up.png');
 const suiteUpImage2 = require('../../assets/project-screenshots/suite-up-2.png');
 const suiteUpImage3 = require('../../assets/project-screenshots/suite-up-3.png');
