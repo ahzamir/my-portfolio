@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import SidePanels from './components/SidePanels';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Projects from './components/pages/Projects';
-import Recomendations from './components/pages/Recomendations';
+import Projects from './components/pages/projects/Projects';
+import Recomendations from './components/pages/recomendations/Recomendations';
 
 const App = () => (
   <div className="App h-100">

@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import recomendationsSvg from '../../assets/svgs/recomendation-page.svg';
+import recomendationsSvg from '../../../assets/svgs/recomendation-page.svg';
 
 const Recomendations = () => (
-  <section id="projects" className="row m-0 pt-5 pb-5 mt-md-5 mb-md-5">
+  <section id="recommendations" className="row m-0 mt-md-5 mb-md-5">
     <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center">
       <img src={recomendationsSvg} alt="Home" className="img-fluid" />
     </div>

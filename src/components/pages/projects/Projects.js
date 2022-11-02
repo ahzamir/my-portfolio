@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import projectsSvg from '../../assets/svgs/projects-page.svg';
+import projectsSvg from '../../../assets/svgs/projects-page.svg';
 import projects from './projects_data';
 
 const Projects = () => {
@@ -31,7 +31,7 @@ const Projects = () => {
     setShow(true);
   };
   return (
-    <section id="projects" className="row m-0 pt-5 pb-5 mt-md-5 mb-md-5">
+    <section id="projects" className="row m-0 mt-md-5 mb-md-5">
       <div className="col-md-9">
         <div className="d-flex mb-4">
           <h2 className="secondary-color mb-3 fw-bold fs-4">Projects</h2>
