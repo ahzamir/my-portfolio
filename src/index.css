@@ -300,7 +300,6 @@ i {
 }
 
 .recommendation-image {
-  /* make the image circle and place it in the top left corner and make it on the top of the other elements */
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -309,7 +308,6 @@ i {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  /* add a shadow to the image */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
