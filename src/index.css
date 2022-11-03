@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/sf-mono?styles=36554,36550,36552,36556,36546,36548');
 /* import oxygen mono font */
 @import url('http://fonts.cdnfonts.com/css/oxygen');
 
@@ -81,7 +81,13 @@ a:hover {
 
 p {
   color: var(--tertiary-color);
+  font-family: var(--sf-mono);
+  font-weight: 300;
+}
+
+#about p {
   font-family: 'Courier New', Courier, monospace;
+  ;
 }
 
 #menuToggle {
@@ -288,6 +294,39 @@ i {
   background-color: var(--tertiary-color);
 }
 
+
+.recommendation-div {
+  height: fit-content;
+}
+
+.recommendation-image {
+  /* make the image circle and place it in the top left corner and make it on the top of the other elements */
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* add a shadow to the image */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-info {
+  background: rgba(13, 34, 66, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3.5rem;
+}
+
+#recommendations p {
+  font-size: 0.9rem;
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 0 12px;
@@ -320,5 +359,18 @@ i {
 
   .carousel-div {
     height: 30vh;
+  }
+
+  .recommendation-info {
+    padding: 2rem;
+  }
+
+  #recommendations p {
+    font-size: 0.6rem;
+  }
+
+  .recommendation-image {
+    width: 50px;
+    height: 50px;
   }
 }

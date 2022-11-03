@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import recomendationsSvg from '../../../assets/svgs/recomendation-page.svg';
+import recommendations from './recomendations_data';
 
 const Recomendations = () => (
   <section id="recommendations" className="row m-0 mt-md-5 mb-md-5">
@@ -14,18 +16,41 @@ const Recomendations = () => (
       </div>
       <Carousel
         fade
-        nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
-        prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle-y" />}
-        className="carousel-div"
+        nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-main-color rounded-circle border border-3 border-white p-3 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
+        prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon bg-main-color rounded-circle border border-3 border-white p-3 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle-y" />}
+        className="recommendation-div"
       >
-        <Carousel.Item>
-          <h1>Carousel</h1>
-          <Carousel.Caption
-            className="d-flex flex-column justify-content-end carousel-info"
+        {recommendations.map((recommendation) => (
+          <Carousel.Item
+            key={recommendation.id}
+            className="d-flex"
           >
-            <h3 className="text-white fw-bold fs-6 fs-md-5">Carousel</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
+            <div>
+              <img
+                className="recommendation-image"
+                src={recommendation.image}
+                alt={recommendation.name}
+              />
+            </div>
+            <div className="p-3 p-md-5 h-100">
+              <div className="rounded-3 h-100 recommendation-info">
+                <a
+                  className="fs-6 fw-bold text-decoration-none quaternary-color fs-md-3"
+                  href={recommendation.profile}
+                >
+                  {recommendation.name}
+                  <i
+                    className="ms-2 fs-6"
+                  >
+                    <FaExternalLinkAlt />
+                  </i>
+                </a>
+                <p className="fw-bold secondary-color mb-4">{recommendation.about}</p>
+                <p className="tertiary-color">{recommendation.recommendation}</p>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   </section>
