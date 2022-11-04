@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/pages/projects/Projects';
 import Recomendations from './components/pages/recomendations/Recomendations';
+import Contact from './components/pages/Contact';
 
 const App = () => (
   <div className="App h-100">
@@ -18,6 +19,7 @@ const App = () => (
         <About />
         <Projects />
         <Recomendations />
+        <Contact />
       </div>
     </main>
   </div>
