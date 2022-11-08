@@ -125,7 +125,7 @@ const About = () => (
             <i style={{ color: '#4a154b' }}><BsSlack /></i>
             ,
             {' '}
-            <i style={{ color: '#181717' }}><DiGithubBadge /></i>
+            <i style={{ color: 'white' }}><DiGithubBadge /></i>
             ,
             {' '}
             <i style={{ color: '#f05032' }}><DiGit /></i>

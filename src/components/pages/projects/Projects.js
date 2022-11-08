@@ -34,9 +34,14 @@ const Projects = () => {
     <section id="projects" className="row m-0 mt-md-5 mb-md-5">
       <div className="col-md-9">
         <div className="d-flex mb-4">
-          <h2 className="secondary-color mb-3 fw-bold fs-4">Projects</h2>
+          <h2 className="secondary-color mb-3 fw-bold fs-4">Highlighted Projects</h2>
           <hr className="ms-3 w-25" />
         </div>
+        <p
+          className="text-white fs-6 fs-md-5"
+        >
+          Click on the project&apos;s image to see more details.
+        </p>
         <Carousel
           fade
           nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
@@ -46,7 +51,6 @@ const Projects = () => {
           {projects.map((project) => (
             <Carousel.Item
               key={project.id}
-              onClick={handleClick}
             >
               <img
                 className="d-block w-100 rounded shadow border border-2 border-white"
@@ -55,6 +59,8 @@ const Projects = () => {
                 }}
                 src={project.image}
                 alt={project.title}
+                id={project.id}
+                onClick={handleClick}
               />
               <Carousel.Caption
                 className="d-flex flex-column justify-content-end carousel-info"
@@ -64,14 +70,6 @@ const Projects = () => {
                 >
                   {project.title}
                 </h3>
-                <button
-                  type="button"
-                  id={project.id}
-                  onClick={handleClick}
-                  className="btn btn-outline-light mt-1 fs-md-6 fw-bold rounded-pill"
-                >
-                  See Project
-                </button>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
