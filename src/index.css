@@ -62,7 +62,6 @@ body {
 header {
   padding: 0 143px;
   height: 80px;
-  box-shadow: 0 2px 4px hsl(217, 66%, 17%, 0.5);
 }
 
 .logo {
