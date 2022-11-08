@@ -85,9 +85,14 @@ p {
   font-weight: 300;
 }
 
+.side-panels:hover {
+  color: var(--secondary-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 #about p {
   font-family: 'Courier New', Courier, monospace;
-  ;
 }
 
 #menuToggle {
