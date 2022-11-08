@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 const Contact = () => {
     const ValidationTextField = styled(TextField)({
         '& .MuiOutlinedInput-root': {
+            background: 'rgba(13, 34, 66, 0.5)',
             '& fieldset': {
                 borderColor: 'var(--quaternary-color)',
             },
@@ -46,9 +47,9 @@ const Contact = () => {
                     <hr className="ms-3 w-25" />
                 </div>
                 <div>
-                    <p className="tertiary-color mb-3 fw-bold fs-6">I'm always interested in hearing about new projects, so if you'd like to chat
+                    <p className="quaternary-color mb-3 fw-bold fs-6">I'm always interested in hearing about new projects, so if you'd like to chat
                         please get in touch.</p>
-                    <form action="https://formspree.io/f/xayvdjzb" method="post" autoComplete="off">
+                    <form action="https://formspree.io/f/xayvdjzb" method="post" autoComplete="off" className="pe-md-5 pt-5">
                         <ValidationTextField
                             label="Name"
                             variant="outlined"
@@ -86,7 +87,7 @@ const Contact = () => {
                                 },
                             }}
                         />
-                        <button type="submit" value="send" className="btn bg-main border-white secondary-color mt-3">Submit</button>
+                        <button type="submit" value="send" className="btn bg-main secondary-color mt-3 form-button fw-bold">Submit</button>
                     </form>
                 </div>
             </div>
