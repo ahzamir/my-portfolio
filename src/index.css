@@ -280,6 +280,13 @@ i {
   justify-content: space-between;
 }
 
+.project-images {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .project-link {
   font-size: 0.6rem;
   border: #d9a300 2px solid;
@@ -380,6 +387,10 @@ i {
 
   .carousel-div {
     height: 30vh;
+  }
+
+  .project-images {
+    height: 152px;
   }
 
   .recommendation-info {

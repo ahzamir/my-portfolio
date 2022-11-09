@@ -98,10 +98,9 @@ const Projects = () => {
                   key={image}
                 >
                   <img
-                    className="img-fluid border border-2 border-white rounded shadow"
+                    className="img-fluid border border-2 border-white rounded shadow project-images"
                     src={image}
                     alt={projectData.title}
-                    style={{ height: '360px', objectFit: 'cover', objectPosition: 'center', width: '100%' }}
                   />
                 </Carousel.Item>
               ))}
