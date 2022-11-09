@@ -96,6 +96,9 @@ p {
 
 #about p {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 #menuToggle {
@@ -236,12 +239,6 @@ section {
 
 i {
   font-size: 1.9rem;
-}
-
-#about p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 500;
 }
 
 .carousel-div {
