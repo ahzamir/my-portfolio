@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
@@ -52,6 +53,7 @@ const Projects = () => {
             <Carousel.Item
               key={project.id}
             >
+              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
               <img
                 className="d-block w-100 rounded shadow border border-2 border-white"
                 style={{
