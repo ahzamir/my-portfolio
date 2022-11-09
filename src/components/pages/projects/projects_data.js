@@ -4,24 +4,24 @@ const suiteUpImage = require('../../../assets/project-screenshots/suite-up.png')
 const suiteUpImage2 = require('../../../assets/project-screenshots/suite-up-2.png');
 const suiteUpImage3 = require('../../../assets/project-screenshots/suite-up-3.png');
 const suiteUpImage4 = require('../../../assets/project-screenshots/suite-up-4.png');
-// const suiteUpImage5 = require('../../../assets/project-screenshots/suite-up-mobile.svg');
+const suiteUpImage5 = require('../../../assets/project-screenshots/mobile/suit-app.jpg');
 const budgetAppImage = require('../../../assets/project-screenshots/budget-app.png');
-// const budgetAppImage2 = require('../../../assets/project-screenshots/budget-app-mobile.svg');
+const budgetAppImage2 = require('../../../assets/project-screenshots/mobile/budget-app.jpg');
 const weatherAppImage = require('../../../assets/project-screenshots/weather-app.png');
-// const weatherAppImage2 = require('../../../assets/project-screenshots/weather-app-mobile.svg');
+const weatherAppImage2 = require('../../../assets/project-screenshots/mobile/world-weather.jpg');
 const bookStoreAppImage = require('../../../assets/project-screenshots/book-store.png');
 const mathMagiciansImage = require('../../../assets/project-screenshots/math-magicians-1.png');
-// const mathMagiciansImage2 = require('../../../assets/project-screenshots/math-magicians-mobile.svg');
+const mathMagiciansImage2 = require('../../../assets/project-screenshots/mobile/math-magician.jpg');
 const topRatedMoviesImage = require('../../../assets/project-screenshots/top-rated-movies.png');
 const topRatedMoviesImage2 = require('../../../assets/project-screenshots/top-rated-movies-1.png');
 const leaderboardImage = require('../../../assets/project-screenshots/leaderboard-1.png');
-// const leaderboardImage2 = require('../../../assets/project-screenshots/leaderboard-mobile.svg');
+const leaderboardImage2 = require('../../../assets/project-screenshots/mobile/leaderboard.jpg');
 const awesomeBooksImage = require('../../../assets/project-screenshots/awesom-books-1.png');
 const awesomeBooksImage2 = require('../../../assets/project-screenshots/awesom-books-2.png');
-// const awesomeBooksImage3 = require('../../../assets/project-screenshots/awesome-book-mobile.svg');
+const awesomeBooksImage3 = require('../../../assets/project-screenshots/mobile/awesome-books.jpg');
 const incomingMovieImage = require('../../../assets/project-screenshots/incoming-movies-1.png');
 const incomingMovieImage2 = require('../../../assets/project-screenshots/incoming-movies-2.png');
-// const incomingMovieImage3 = require('../../../assets/project-screenshots/incoming-movies-mobile.svg');
+const incomingMovieImage3 = require('../../../assets/project-screenshots/mobile/incoming-movies.jpg');
 
 const projects = [
   {
@@ -35,7 +35,7 @@ const projects = [
       suiteUpImage2,
       suiteUpImage3,
       suiteUpImage4,
-      // suiteUpImage5,
+      suiteUpImage5,
     ],
     live_link: 'https://hotel-room-frontend.vercel.app/',
     source_link: 'https://github.com/felixodette/hotel-room-frontend',
@@ -48,7 +48,7 @@ const projects = [
     languages_and_tools: ['Ruby on Rails', 'PostgreSQL', 'Heroku', 'Swagger', 'Devise'],
     more_images: [
       budgetAppImage,
-      // budgetAppImage2,
+      budgetAppImage2,
     ],
     live_link: 'https://zamir-budget-app.herokuapp.com/users/sign_in',
     source_link: 'https://github.com/ahzamir/budget-app',
@@ -61,7 +61,7 @@ const projects = [
     languages_and_tools: ['React', 'OpenWeatherMap API', 'Netlify', 'Bootstrap'],
     more_images: [
       weatherAppImage,
-      // weatherAppImage2,
+      weatherAppImage2,
     ],
     live_link: 'https://gregarious-pavlova-aaa751.netlify.app/',
     source_link: 'https://github.com/ahzamir/weather-condition-app',
@@ -86,7 +86,7 @@ const projects = [
     languages_and_tools: ['React', 'React Router', 'Netlify', 'Bootstrap'],
     more_images: [
       mathMagiciansImage,
-      // mathMagiciansImage2,
+      mathMagiciansImage2,
     ],
     live_link: 'https://62ab3f1807095e1efe36b2cd--quiet-gumdrop-092633.netlify.app/',
     source_link: 'https://github.com/ahzamir/Math-Magicians',
@@ -112,7 +112,7 @@ const projects = [
     languages_and_tools: ['JavaScript', 'Webpack', 'ES6 modules', 'Microverse API', 'Netlify', 'Bootstrap'],
     more_images: [
       leaderboardImage,
-      // leaderboardImage2,
+      leaderboardImage2,
     ],
     live_link: 'https://ahzamir.github.io/Leaderboard/',
     source_link: 'https://github.com/ahzamir/Leaderboard',
@@ -126,6 +126,7 @@ const projects = [
     more_images: [
       awesomeBooksImage,
       awesomeBooksImage2,
+      awesomeBooksImage3,
     ],
     live_link: 'https://ahzamir.github.io/Awessom-books-with-ES6/',
     source_link: 'https://github.com/ahzamir/Awessom-books-with-ES6',
@@ -139,6 +140,7 @@ const projects = [
     more_images: [
       incomingMovieImage,
       incomingMovieImage2,
+      incomingMovieImage3,
     ],
     live_link: 'https://ahzamir.github.io/Incoming-Movies/',
     source_link: 'https://github.com/ahzamir/Incoming-Movies',
