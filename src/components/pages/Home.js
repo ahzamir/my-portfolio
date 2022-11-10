@@ -2,7 +2,7 @@ import React from 'react';
 import homeSvg from '../../assets/svgs/home-page.svg';
 
 const Home = () => (
-  <section id="home" className="row m-0 pt-5 pb-5 h-100">
+  <section id="home" className="row m-0 mt-md-3 mb-md-3">
     <div className="col-md-8">
       <h2 className="secondary-color mb-4 fw-bold fs-5 font-courier">Hi there!</h2>
       <h1 className="quaternary-color fs-1 fw-bold mb-5">

@@ -40,7 +40,7 @@ const Contact = () => {
   });
 
   return (
-    <section id="contact" className="row m-0 mt-md-5 mb-md-5">
+    <section id="contact" className="row m-0 mt-md-3 mb-md-3">
       <div className="col-md-8">
         <div className="d-flex mb-4">
           <h2 className="secondary-color mb-3 fw-bold fs-4">Contact Me</h2>

@@ -14,7 +14,7 @@ import { BsSlack } from 'react-icons/bs';
 import aboutSvg from '../../assets/svgs/about-page.svg';
 
 const About = () => (
-  <section id="about" className="row m-0 h-100">
+  <section id="about" className="row m-0 mt-md-3 mb-md-3">
     <div className="col-md-4 d-none d-md-flex justify-content-center align-items-center">
       <img src={aboutSvg} alt="About" className="img-fluid" />
     </div>

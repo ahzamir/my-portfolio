@@ -325,11 +325,6 @@ i {
   background-color: var(--tertiary-color);
 }
 
-.recommendation-div {
-  /* eslint-disable-next-line */
-  height: fit-content;
-}
-
 .recommendation-image {
   border-radius: 50%;
   position: absolute;
@@ -385,17 +380,12 @@ i {
     padding: 12px;
   }
 
-  #home,
-  #about,
-  #projects,
-  #recommendations,
-  #contact {
-    /* eslint-disable-next-line */
-    height: fit-content !important;
-  }
-
   i {
     font-size: 1.5rem;
+  }
+
+  section {
+    padding: 4rem 0;
   }
 
   #about p {

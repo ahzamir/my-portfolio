@@ -5,7 +5,7 @@ import recomendationsSvg from '../../../assets/svgs/recomendation-page.svg';
 import recommendations from './recomendations_data';
 
 const Recomendations = () => (
-  <section id="recommendations" className="row m-0 mt-md-5 mb-md-5">
+  <section id="recommendations" className="row m-0 mt-md-4 mb-md-4">
     <div className="col-md-3 d-none d-md-flex justify-content-center align-items-center">
       <img src={recomendationsSvg} alt="Home" className="img-fluid" />
     </div>
