@@ -23,7 +23,7 @@
   --quaternary-color: hsl(208, 97%, 95%);
   --sf-mono: 'SF Mono', monospace;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background: var(--secondary-color);
   border-radius: 10px;
@@ -267,7 +267,6 @@ i {
 
 .carousel-info {
   background: rgba(10, 25, 48, 0.45);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border: 2px solid #ffbf0069;
@@ -279,6 +278,7 @@ i {
   padding: 1rem;
   cursor: pointer;
   -webkit-box-shadow: 30px 30px 80px #d9a300, -30px -30px 80px #fd0;
+  box-shadow: 30px 30px 80px;
 }
 
 .modal-content {
@@ -326,7 +326,8 @@ i {
 }
 
 .recommendation-div {
-  height: fit-content; /* eslint-disable-line */
+  /* eslint-disable-next-line */
+  height: fit-content;
 }
 
 .recommendation-image {
@@ -389,7 +390,8 @@ i {
   #projects,
   #recommendations,
   #contact {
-    height: fit-content !important; /* eslint-disable-line */
+    /* eslint-disable-next-line */
+    height: fit-content !important;
   }
 
   i {
