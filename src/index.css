@@ -7,14 +7,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --main-color: #0a1930;
-  --secondary-color: #ffc000;
-  --tertiary-color: #badefe;
-  --quaternary-color: hsl(208, 97%, 95%);
-  --sf-mono: 'SF Mono', monospace;
-}
-
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -22,6 +14,14 @@
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
+}
+
+:root {
+  --main-color: #0a1930;
+  --secondary-color: #ffc000;
+  --tertiary-color: #badefe;
+  --quaternary-color: hsl(208, 97%, 95%);
+  --sf-mono: 'SF Mono', monospace;
 }
  
 ::-webkit-scrollbar-thumb {
