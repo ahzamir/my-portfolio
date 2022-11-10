@@ -24,7 +24,7 @@ const About = () => (
         <hr className="ms-3 w-25" />
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.location =
           {' '}
           <span className="quaternary-color">[&apos;Kabul, Afghanistan&apos;]</span>
@@ -32,7 +32,7 @@ const About = () => (
         </p>
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.email =
           {' '}
           <span className="quaternary-color">
@@ -44,7 +44,7 @@ const About = () => (
         </p>
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.resume =
           {' '}
           <span>
@@ -56,7 +56,7 @@ const About = () => (
         </p>
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.profeesional_skills =
           {' '}
           <span className="quaternary-color">[&apos;Pair Programming&apos;, &apos;Code Review&apos;, &apos;Test-Driven Development&apos;, &apos;Responsive Web Design&apos;, &apos;Clean Code&apos;, &apos;Version Control&apos;, &apos;Object-Oriented Programming&apos;, &apos;Problem Solving&apos;, &apos;Teamwork&apos;, &apos;Communication&apos;, &apos;Time Management&apos;]</span>
@@ -64,7 +64,7 @@ const About = () => (
         </p>
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.interests =
           {' '}
           <span className="quaternary-color">[&apos;Design&apos;, &apos;Reading Books&apos;, &apos;Movies&apos;, &apos;Travel&apos;, &apos;Workout&apos;]</span>
@@ -72,7 +72,7 @@ const About = () => (
         </p>
       </div>
       <div>
-        <p className='fw-bold'>
+        <p className="fw-bold">
           &gt; Zamir.skills =
           {' '}
           <span className="quaternary-color">[</span>
