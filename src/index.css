@@ -16,17 +16,17 @@
   border-radius: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
 :root {
   --main-color: #0a1930;
   --secondary-color: #ffc000;
   --tertiary-color: #badefe;
   --quaternary-color: hsl(208, 97%, 95%);
   --sf-mono: 'SF Mono', monospace;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
-  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
