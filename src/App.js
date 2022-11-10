@@ -1,13 +1,28 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <p>My name is Zamir</p>
-        <span>Yeah boy!</span>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import Navbar from './components/Navbar';
+import SidePanels from './components/SidePanels';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/projects/Projects';
+import Recomendations from './components/pages/recomendations/Recomendations';
+import Contact from './components/pages/Contact';
+
+const App = () => (
+  <div className="App h-100">
+    <Navbar />
+    <main className="main-content row m-0 h-100">
+      <div className="position-fixed h-100 d-none d-md-flex col-md-1 flex-column justify-content-center align-items-center">
+        <SidePanels />
+      </div>
+      <div className="col-md-11 offset-md-1 h-100 contents pt-5">
+        <Home />
+        <About />
+        <Projects />
+        <Recomendations />
+        <Contact />
+      </div>
+    </main>
+  </div>
+);
 
 export default App;
