@@ -5,6 +5,12 @@ const suiteUpImage2 = require('../../../assets/project-screenshots/suite-up-2.pn
 const suiteUpImage3 = require('../../../assets/project-screenshots/suite-up-3.png');
 const suiteUpImage4 = require('../../../assets/project-screenshots/suite-up-4.png');
 const suiteUpImage5 = require('../../../assets/project-screenshots/mobile/suit-app.jpg');
+const myPortfolioImage = require('../../../assets/project-screenshots/my-portfolio-1.png');
+const myPortfolioImage2 = require('../../../assets/project-screenshots/my-portfolio-2.png');
+const myPortfolioImage3 = require('../../../assets/project-screenshots/my-portfolio-3.png');
+const myPortfolioImage4 = require('../../../assets/project-screenshots/my-portfolio-4.png');
+const myPortfolioImage5 = require('../../../assets/project-screenshots/my-portfolio-5.png');
+const myPortfolioImage6 = require('../../../assets/project-screenshots/mobile/my-portfolio.jpg');
 const budgetAppImage = require('../../../assets/project-screenshots/budget-app.png');
 const budgetAppImage2 = require('../../../assets/project-screenshots/mobile/budget-app.jpg');
 const weatherAppImage = require('../../../assets/project-screenshots/weather-app.png');
@@ -39,6 +45,23 @@ const projects = [
     ],
     live_link: 'https://hotel-room-frontend.vercel.app/',
     source_link: 'https://github.com/felixodette/hotel-room-frontend',
+  },
+  {
+    id: '2',
+    title: 'My Portfolio',
+    description: 'My Portfolio is a React app which simulates a portfolio website. It has a home page, about page, projects page, recommendations page, and contact page. Users can navigate through the pages using the navigation bar and scroll down to view the content information about me and my projects and also contact me.',
+    image: myPortfolioImage,
+    languages_and_tools: ['React', 'Bootstrap', 'React-Bootstrap', 'Material-UI', 'Vercel'],
+    more_images: [
+      myPortfolioImage,
+      myPortfolioImage2,
+      myPortfolioImage3,
+      myPortfolioImage4,
+      myPortfolioImage5,
+      myPortfolioImage6,
+    ],
+    live_link: 'https://my-portfolio-ahzamir.vercel.app/',
+    source_link: 'https://github.com/ahzamir/my-portfolio',
   },
   {
     id: '2',
