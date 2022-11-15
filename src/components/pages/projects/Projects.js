@@ -37,8 +37,7 @@ const Projects = () => {
     projectDetails.forEach((projectDetail) => {
       projectDetail.classList.remove('d-flex');
       projectDetail.classList.add('d-none');
-    }
-    );
+    });
   };
 
   const handleLeave = () => {
@@ -46,8 +45,7 @@ const Projects = () => {
     projectDetails.forEach((projectDetail) => {
       projectDetail.classList.remove('d-none');
       projectDetail.classList.add('d-flex');
-    }
-    );
+    });
   };
 
   return (

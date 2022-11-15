@@ -45,7 +45,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a href='#home'><img src={logoImg} alt="Zamir's logo" className="logo" /></a>
+        <a href="#home"><img src={logoImg} alt="Zamir's logo" className="logo" /></a>
         <ul className="d-none d-md-flex justify-content-between align-items-center list-style-none mb-0 w-50 ps-5">
           {links.map((link) => (
             <li key={link.id}>
