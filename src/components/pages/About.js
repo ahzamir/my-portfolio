@@ -77,57 +77,75 @@ const About = () => (
           {' '}
           <span className="quaternary-color">[</span>
           <span className="quaternary-color">
+            HTML5
             <i style={{ color: '#f35321' }}><AiOutlineHtml5 /></i>
             ,
             {' '}
+            CSS3
             <i style={{ color: '#0e83cd' }}><DiCss3 /></i>
             ,
             {' '}
+            JavaScript
             <i style={{ color: '#f0db4f' }}><DiJavascript1 /></i>
             ,
             {' '}
+            React
             <i style={{ color: '#61dafb' }}><DiReact /></i>
             ,
             {' '}
+            Bootstrap
             <i style={{ color: '#563d7c' }}><FaBootstrap /></i>
             ,
             {' '}
+            SASS
             <i style={{ color: '#cc6699' }}><FaSass /></i>
             ,
             {' '}
+            Npm
             <i style={{ color: '#cb3837' }}><FaNpm /></i>
             ,
             {' '}
+            Ruby
             <i style={{ color: '#cc342d' }}><DiRuby /></i>
             ,
             {' '}
+            Ruby on Rails
             <i style={{ color: '#cc0000' }}><SiRubyonrails /></i>
             ,
             {' '}
+            PostgreSQL
             <i style={{ color: '#336791' }}><SiPostgresql /></i>
             ,
             {' '}
+            Netlify
             <i style={{ color: '#00c7b7' }}><SiNetlify /></i>
             ,
             {' '}
+            Postman
             <i style={{ color: '#ff6c37' }}><SiPostman /></i>
             ,
             {' '}
+            GitLab
             <i style={{ color: '#fca326' }}><SiGitlab /></i>
             ,
             {' '}
+            Jest
             <i style={{ color: '#c21325' }}><SiJest /></i>
             ,
             {' '}
+            Heroku
             <i style={{ color: '#430098' }}><DiHeroku /></i>
             ,
             {' '}
+            Slack
             <i style={{ color: '#4a154b' }}><BsSlack /></i>
             ,
             {' '}
+            GitHub
             <i style={{ color: 'white' }}><DiGithubBadge /></i>
             ,
             {' '}
+            Git
             <i style={{ color: '#f05032' }}><DiGit /></i>
           </span>
           <span className="quaternary-color">]</span>
