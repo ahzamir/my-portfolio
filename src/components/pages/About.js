@@ -25,14 +25,6 @@ const About = () => (
       </div>
       <div>
         <p className="fw-bold">
-          &gt; Zamir.location =
-          {' '}
-          <span className="quaternary-color">[&apos;Kabul, Afghanistan&apos;]</span>
-          ;
-        </p>
-      </div>
-      <div>
-        <p className="fw-bold">
           &gt; Zamir.email =
           {' '}
           <span className="quaternary-color">
