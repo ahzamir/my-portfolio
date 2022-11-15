@@ -31,6 +31,23 @@ const Projects = () => {
     });
     setShow(true);
   };
+
+  const handleHover = () => {
+    const projectDetails = document.querySelectorAll('.carousel-caption');
+    projectDetails.forEach((projectDetail) => {
+      projectDetail.classList.remove('d-flex');
+      projectDetail.classList.add('d-none');
+    });
+  };
+
+  const handleLeave = () => {
+    const projectDetails = document.querySelectorAll('.carousel-caption');
+    projectDetails.forEach((projectDetail) => {
+      projectDetail.classList.remove('d-none');
+      projectDetail.classList.add('d-flex');
+    });
+  };
+
   return (
     <section id="projects" className="row m-0 mt-md-5 mb-md-5">
       <div className="col-md-9">
@@ -51,7 +68,9 @@ const Projects = () => {
         >
           {projects.map((project) => (
             <Carousel.Item
-              key={project.id}
+              key={project.title}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleLeave}
             >
               {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
               <img
@@ -72,6 +91,16 @@ const Projects = () => {
                 >
                   {project.title}
                 </h3>
+                <ul className="list-unstyled d-flex flex-wrap justify-content-center">
+                  {project.languages_and_tools.map((language) => (
+                    <li
+                      key={language}
+                      className="badge text-wrap m-1 p-2 border border-1 border-white fw-bold bg-secondary-color main-color"
+                    >
+                      {language}
+                    </li>
+                  ))}
+                </ul>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
