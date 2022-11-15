@@ -18,18 +18,6 @@ const Projects = () => {
     source_link: '',
   });
 
-  const handleHover = () => {
-    const projectInfo = document.querySelector('.carousel-info');
-    projectInfo.classList.remove('d-flex');
-    projectInfo.classList.add('d-none');
-  };
-
-  const handleLeave = () => {
-    const projectInfo = document.querySelector('.carousel-info');
-    projectInfo.classList.remove('d-none');
-    projectInfo.classList.add('d-flex');
-  };
-
   const handleClick = (event) => {
     const project = projects.find((project) => project.id === event.target.id);
     setProjectData({
@@ -43,6 +31,25 @@ const Projects = () => {
     });
     setShow(true);
   };
+
+  const handleHover = () => {
+    const projectDetails = document.querySelectorAll('.carousel-caption');
+    projectDetails.forEach((projectDetail) => {
+      projectDetail.classList.remove('d-flex');
+      projectDetail.classList.add('d-none');
+    }
+    );
+  };
+
+  const handleLeave = () => {
+    const projectDetails = document.querySelectorAll('.carousel-caption');
+    projectDetails.forEach((projectDetail) => {
+      projectDetail.classList.remove('d-none');
+      projectDetail.classList.add('d-flex');
+    }
+    );
+  };
+
   return (
     <section id="projects" className="row m-0 mt-md-5 mb-md-5">
       <div className="col-md-9">
@@ -60,12 +67,12 @@ const Projects = () => {
           nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
           prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle-y" />}
           className="carousel-div"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
         >
           {projects.map((project) => (
             <Carousel.Item
               key={project.title}
+              onMouseEnter={handleHover}
+              onMouseLeave={handleLeave}
             >
               {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
               <img
@@ -86,17 +93,16 @@ const Projects = () => {
                 >
                   {project.title}
                 </h3>
-                {/* add the project languages and tools */}
-                <div className="d-flex flex-wrap justify-content-center">
+                <ul className="list-unstyled d-flex flex-wrap justify-content-center">
                   {project.languages_and_tools.map((language) => (
-                    <span
+                    <li
                       key={language}
-                      className="badge bg-secondary text-white m-1"
+                      className="badge text-wrap m-1 p-2 border border-1 border-white fw-bold bg-secondary-color main-color"
                     >
                       {language}
-                    </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
