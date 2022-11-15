@@ -18,6 +18,18 @@ const Projects = () => {
     source_link: '',
   });
 
+  const handleHover = () => {
+    const projectInfo = document.querySelector('.carousel-info');
+    projectInfo.classList.remove('d-flex');
+    projectInfo.classList.add('d-none');
+  };
+
+  const handleLeave = () => {
+    const projectInfo = document.querySelector('.carousel-info');
+    projectInfo.classList.remove('d-none');
+    projectInfo.classList.add('d-flex');
+  };
+
   const handleClick = (event) => {
     const project = projects.find((project) => project.id === event.target.id);
     setProjectData({
@@ -48,10 +60,12 @@ const Projects = () => {
           nextIcon={<span aria-hidden="true" className="carousel-control-next-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y" />}
           prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon bg-dark rounded-circle border border-2 border-dark p-2 m-2 fs-4 fw-bold text-white d-flex align-items-center justify-content-center position-absolute top-50 start-0 translate-middle-y" />}
           className="carousel-div"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
         >
           {projects.map((project) => (
             <Carousel.Item
-              key={project.id}
+              key={project.title}
             >
               {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions */}
               <img
@@ -72,6 +86,17 @@ const Projects = () => {
                 >
                   {project.title}
                 </h3>
+                {/* add the project languages and tools */}
+                <div className="d-flex flex-wrap justify-content-center">
+                  {project.languages_and_tools.map((language) => (
+                    <span
+                      key={language}
+                      className="badge bg-secondary text-white m-1"
+                    >
+                      {language}
+                    </span>
+                  ))}
+                </div>
               </Carousel.Caption>
             </Carousel.Item>
           ))}

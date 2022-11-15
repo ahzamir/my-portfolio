@@ -64,7 +64,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/my-portfolio',
   },
   {
-    id: '2',
+    id: '3',
     title: 'Budget App',
     description: 'Budget App is a Ruby on Rails app which allows users to create a budget and track their expenses. It uses a PostgreSQL database to store the data, RESTful API to communicate with the database, Devise for user authentication, and Swagger for API documentation.',
     image: budgetAppImage,
@@ -77,7 +77,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/budget-app',
   },
   {
-    id: '3',
+    id: '4',
     title: 'Weather App',
     description: 'Weather App is a React app which allows users to search for a city and state and view the current weather conditions and a 5-day forecast. It uses the OpenWeatherMap API to get the weather data.',
     image: weatherAppImage,
@@ -90,7 +90,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/weather-condition-app',
   },
   {
-    id: '4',
+    id: '5',
     title: 'Bookstore CMS',
     description: 'Bookstore CMS is a React app which allows users to add, remove, and edit books. It uses a PostgreSQL database to store the data, RESTful API to communicate with the database, and React Router to handle routing.',
     image: bookStoreAppImage,
@@ -102,7 +102,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/Book-Store',
   },
   {
-    id: '5',
+    id: '6',
     title: 'Math Magicians',
     description: 'Math Magicians is a React app which allows users to perform basic math operations. It uses React Router to handle routing.',
     image: mathMagiciansImage,
@@ -115,7 +115,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/Math-Magicians',
   },
   {
-    id: '6',
+    id: '7',
     title: 'Top-Rated Movies',
     description: 'Top-Rated Movies is a JavaScript app which allows users to view the 20 top-rated movies. It uses the TMDB API to get the movie data.',
     image: topRatedMoviesImage,
@@ -128,7 +128,7 @@ const projects = [
     source_link: 'https://github.com/felixodette/Javascript-Group-Capstone',
   },
   {
-    id: '7',
+    id: '8',
     title: 'Leaderboard',
     description: 'Leaderboard is a JavaScript app which allows users to view the players scores and add their own score. It uses the Webpack and ES6 modules to organize the code, and Microverse API to get the player data.',
     image: leaderboardImage,
@@ -141,7 +141,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/Leaderboard',
   },
   {
-    id: '8',
+    id: '9',
     title: 'Awesome Books',
     description: 'Awesome Books is a JavaScript app which allows users to add and remove books. It uses the ES6 modules to organize the code.',
     image: awesomeBooksImage,
@@ -155,7 +155,7 @@ const projects = [
     source_link: 'https://github.com/ahzamir/Awessom-books-with-ES6',
   },
   {
-    id: '9',
+    id: '10',
     title: 'Incoming Movies Event',
     description: 'Incoming Movies Event is a JavaScript app which allows users to view an upcoming event about movies. It shows the event details, the speakers, and the schedule.',
     image: incomingMovieImage,
