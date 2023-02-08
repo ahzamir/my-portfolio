@@ -32,7 +32,7 @@ const incomingMovieImage3 = require('../../../assets/project-screenshots/mobile/
 const projects = [
   {
     id: '1',
-    title: 'SuiteApp',
+    title: 'SuiteUp',
     description: 'SuiteUp is a Rails React app which simulates a hotel booking system. It allows users to book a room, view their bookings, and cancel bookings. It also allows users to create a new room and view all rooms. It uses a PostgreSQL database to store the data, and RESTful API to communicate with the database.',
     image: suiteUpImage,
     languages_and_tools: ['Ruby on Rails', 'React', 'PostgreSQL', 'Bootstrap', 'Heroku', 'Vercel'],
@@ -43,7 +43,7 @@ const projects = [
       suiteUpImage4,
       suiteUpImage5,
     ],
-    live_link: 'https://hotel-room-frontend.vercel.app/',
+    live_link: 'https://hotel-room-frontend-lfv20xmh2-felixodette.vercel.app/',
     source_link: 'https://github.com/felixodette/hotel-room-frontend',
   },
   {
@@ -60,7 +60,7 @@ const projects = [
       myPortfolioImage5,
       myPortfolioImage6,
     ],
-    live_link: 'https://my-portfolio-ahzamir.vercel.app/',
+    live_link: 'https://ahzamir-portfolio.vercel.app/',
     source_link: 'https://github.com/ahzamir/my-portfolio',
   },
   {
@@ -73,7 +73,7 @@ const projects = [
       budgetAppImage,
       budgetAppImage2,
     ],
-    live_link: 'https://zamir-budget-app.herokuapp.com/users/sign_in',
+    live_link: 'https://budget-app-1.onrender.com/',
     source_link: 'https://github.com/ahzamir/budget-app',
   },
   {
