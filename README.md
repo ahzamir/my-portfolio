@@ -6,7 +6,7 @@
 > My Portfolio is a project that simulates a portfolio website. It has a home page, about page, projects page, recomendaions page, and contact page. Users can see my projects, recommendations, and contact me.
 
 ## Live Demo
-- [My Portfolio](http://my-portfolio-ahzamir.vercel.app/)
+- [My Portfolio](https://ahzamir-portfolio.vercel.app/)
 
 ## Built With
 
